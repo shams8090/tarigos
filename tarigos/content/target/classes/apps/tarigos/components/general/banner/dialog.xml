@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    width="500"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab
+                jcr:primaryType="cq:Panel"
+                title="CTA Component">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <button
+                        jcr:primaryType="cq:Widget"
+                        anchor="90%"
+                        fieldDescription="Please enter the Text for Button"
+                        fieldLabel="CTA Text"
+                        layout="anchor"
+                        name="./buttonText"
+                        xtype="textfield"/>
+                    <cta
+                        jcr:primaryType="cq:Widget"
+                        anchor="90%"
+                        fieldDescription="  If internal URL select through path picker.If external URL give the entire page path including the hypertext."
+                        fieldLabel="Target Link"
+                        layout="anchor"
+                        name="./callToAction"
+                        parBrowse="true"
+                        rootPath="/content/dhl/"
+                        xtype="pathfield"/>
+                </items>
+            </tab>
+        </items>
+    </items>
+</jcr:root>

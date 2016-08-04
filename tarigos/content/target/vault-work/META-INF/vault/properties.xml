@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>tarigos Package</comment>
+<entry key="createdBy">starig</entry>
+<entry key="name">tarigos-content</entry>
+<entry key="created">2016-08-04T20:35:39.030+0530</entry>
+<entry key="groupId">com.tarigos.aem</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">tarigos</entry>
+<entry key="description">Maven Multimodule project for tarigos.</entry>
+<entry key="artifactId">tarigos-content</entry>
+<entry key="path">/etc/packages/tarigos/tarigos-content.zip</entry>
+</properties>

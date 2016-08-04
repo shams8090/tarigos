@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    width="500"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab
+                jcr:primaryType="cq:Panel"
+                title="CTA Component">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <button
+                        jcr:primaryType="cq:Widget"
+                        anchor="90%"
+                        fieldDescription="Please enter the Text for Button"
+                        fieldLabel="CTA Text"
+                        layout="anchor"
+                        name="./buttonText"
+                        xtype="textfield"/>
+                    <cta
+                        jcr:primaryType="cq:Widget"
+                        anchor="90%"
+                        fieldDescription="  If internal URL select through path picker.If external URL give the entire page path including the hypertext."
+                        fieldLabel="Target Link"
+                        layout="anchor"
+                        name="./callToAction"
+                        parBrowse="true"
+                        rootPath="/content/dhl/"
+                        xtype="pathfield"/>
+                    <color
+                        jcr:primaryType="cq:Widget"
+                        anchor="90%"
+                        defaultValue="redwhite"
+                        fieldDescription="Please select one option default is Red Bg with White Text"
+                        fieldLabel="Color Combination for Button and Button Text"
+                        layout="anchor"
+                        name="./color"
+                        type="select"
+                        value="redwhite"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <red-white-text
+                                jcr:primaryType="nt:unstructured"
+                                text="Red Background with White Text"
+                                value="redwhite"/>
+                            <yellow-red-text
+                                jcr:primaryType="nt:unstructured"
+                                text="Yellow Background with Red Text"
+                                value="yellowred"/>
+                            <white-red-text
+                                jcr:primaryType="nt:unstructured"
+                                text="White Background with Red Text"
+                                value="whitered"/>
+                            <yellow-black-text
+                                jcr:primaryType="nt:unstructured"
+                                text="Yellow Background with Black Text"
+                                value="yellowblack"/>
+                        </options>
+                    </color>
+                </items>
+            </tab>
+        </items>
+    </items>
+</jcr:root>
